@@ -1,5 +1,5 @@
 [project]
-name = "agents-with-langchain"
+name = "fulbo-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
