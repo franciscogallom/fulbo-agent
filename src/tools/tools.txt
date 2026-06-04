@@ -1,0 +1,6 @@
+# Tools let a model interact with external systems by calling functions you define. 
+# Tools can depend on runtime context and also interact with agent memory.
+
+# Tools should be well-documented: their name, description, and argument names become part of the model’s prompt. 
+# LangChain’s @tool decorator adds metadata and enables runtime injection with the ToolRuntime parameter. 
+# Learn more in the tools guide -> https://docs.langchain.com/oss/python/langchain/tools
