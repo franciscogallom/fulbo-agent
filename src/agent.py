@@ -1,3 +1,5 @@
+import os
+
 from deepagents import create_deep_agent
 from langchain.chat_models import init_chat_model
 from langchain.tools import tool
@@ -23,7 +25,7 @@ model = init_chat_model(
     temperature=0.5,
     timeout=600,
     base_url="https://ollama.com",
-    client_kwargs={"headers": {"Authorization": f"Bearer 9d9fcb41665c49a99698a4d5b0a7ec28.JzsztdvYWXq9LGhO0JOoU52X"}},
+    client_kwargs={"headers": {"Authorization": f"Bearer {os.environ['OLLAMA_API_KEY']}"}},
 )
 
 # Add memory to your agent to maintain state across interactions. 
